@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Hossain | Portfolio</title>
+    <meta content="Hello, I'm Robin Hossain, currently working as a Junior Officer at Mousumi Industries Limited. I manage IT infrastructure, monitor data center operations, and ensure seamless network connectivity. I'm passionate about staying updated with emerging technologies and continuously taking on challenges that enhance my skills and contribute to organizational growth." name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon/logo_desktop.png" rel="icon">
+    <link href="assets/img/favicon/logo_desktop.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <canvas id="particleBackground" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;"></canvas>
+    <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#16213e 100%);"></div>
+
+
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Click to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-container">
+            <div class="loader">
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__shadow"></div>
+                <div class="loader__ball"></div>
+            </div>
+            
+            <!-- Message Reveal removed per request -->
+            <div class="loading-message" id="loadingMessage"></div>
+            
+            
+            <!-- Loading Progress -->
+            <div class="loading-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>R</span><span class="wave-o">o</span><span>b</span><span>i</span><span>n</span><span>&nbsp;</span><span>H</span><span class="wave-o">o</span><span>s</span><span>s</span><span>a</span><span>i</span><span>n</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Video Background -->
+        <video class="hero-video-background" autoplay muted loop playsinline>
+            <source src="assets/background_effect_hero_section.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Video Overlay -->
+        <div class="video-overlay"></div>
+        
+        <div class="hero-content">
+            <h2 class="section-title" style="display:none;"><i class="fas fa-house-chimney"></i> Home</h2>
+            <h1 class="hero-intro">Hello, It's Me,</h1>
+            <h1 class="hero-title">Robin Hossain</h1>
+            <div class="hero-subtitle">
+                <span class="typewriter-fixed">I'm&nbsp;</span><span id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Currently working as a Junior Officer in the Department of IT at Mousumi Industries Limited, where I manage IT infrastructure, ensure seamless network connectivity, and monitor data center operations. To me, keeping up with the latest technological advances and tackling challenging tasks is essential to improving my skills and contributing to the company's success.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('about')">Know More</button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Hire Me</button>
+            </div>
+            <div class="social-links">
+                <a href="https://bd.linkedin.com/in/imrobinhossain" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/imrobinhossain" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.quora.com/profile/%E0%A6%AE%E0%A7%8B%E0%A6%B9%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%A6-%E0%A6%B0%E0%A6%AC%E0%A6%BF%E0%A6%A8-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%87%E0%A6%A8-Robin-Hossain" target="_blank" class="social-link">
+                    <i class="fab fa-quora"></i>
+                </a>
+                <a href="https://facebook.com/imrobinhossain" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/imrobinhossain" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/+8801521560399" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.imdb.com/list/ls568020917/" target="_blank" class="social-link">
+                    <i class="fab fa-imdb"></i>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <!-- Minimalistic and polished animated mouse icon -->
+                <svg class="mouse-anim" width="65" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="12" y="2" width="30" height="50" rx="15" stroke="#fff" stroke-width="3.2" fill="none"/>
+                    <circle class="mouse-wheel" cx="27" cy="13" r="2.5" fill="#fff"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title"></i> Professional Summary</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I was born and raised in Dhaka, and now I'm a Junior Officer at Mousumi Industries Limited. In this role, I oversee IT infrastructure, monitor data center operations, and maintain smooth network connectivity across the organization. Working in an industrial environment has strengthened my practical understanding of large-scale IT systems and inspired me to stay ahead of emerging technologies while constantly expanding my expertise.
+                    </p>
+                    <p>I've done my B.Sc. in Information Technology at the University of Information Technology & Sciences, where I developed a strong foundation in Computer Networking and System Administration. Alongside my degree, I have completed industry-recognized certifications that enhanced my understanding of network protocols, connectivity troubleshooting, wireless configurations, cybersecurity, and computer hardware.
+                    </p>
+                    <p>Every day, I make an effort to educate myself more about current events and the technological world. I love to solve problems and learn new things, and nothing gets me more excited than thinking of innovative ideas and making them really happen so that people can't bear to be without them.
+                    </p>
+                    
+                    <!-- Accordion Section -->
+                    <div class="accordion-section">
+                        <div class="accordion-item" data-accordion="item1">
+                            <div class="accordion-header">
+                                <h3>WHAT I'M REALLY GOOD AT?</h3>
+                                <i class="fas fa-plus accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>I have a strength for learning and applying knowledge, especially in IT fields like networking and cybersecurity. I'm naturally curious and always try to make complex ideas clear and easy to understand. I enjoy analyzing situations, comparing options, and finding the best solutions, which helps me stay focused on both my current work and long-term goals. At the same time, I reflect a lot on myself, which gives me the awareness to balance technical skills with emotional understanding. Altogether, I believe these qualities make me strong in problem-solving, communication, and planning for the future.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-accordion="item2">
+                            <div class="accordion-header">
+                                <h3>WHAT IS MY CAREER GOAL?</h3>
+                                <i class="fas fa-plus accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>My career goal is to build a strong foundation in the field of networking and gradually move into more advanced roles within the sector. Over time, I want to develop the expertise and leadership skills needed to take on greater responsibility in managing IT infrastructure, ideally in an industry or multinational company, where I can ensure secure and reliable IT operations. I see this path as a way to combine my technical knowledge, problem-solving ability, and vision for creating safer digital environments.
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-accordion="item3">
+                            <div class="accordion-header">
+                                <h3>WHAT ARE MY HOBBIES?</h3>
+                                <i class="fas fa-plus accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>I love working on new projects that involve the latest technologies, and I find writing HTML5, CSS, and JavaScript both fun and creative. Outside of coding, collecting different types of perfumes and gadgets is another hobby that excites me. I love to watch movies, which gives me entertainment after a busy day. I also enjoy reading books on technology, personal development, and spirituality, which help me stay updated, grow intellectually, and find balance in life. And of course, traveling is one of my favorite things; it opens me up to new experiences, fresh perspectives, and the chance to explore different cultures.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-accordion="item4">
+                            <div class="accordion-header">
+                                <h3>WHAT IS MY RESEARCH TOPIC?</h3>
+                                <i class="fas fa-plus accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p>My research focuses on exploring "<strong>[<em>Ongoing</em>] Reducing Unwanted Vehicle Horns By Using V2V Wireless Communication.</strong>" I'm particularly interested in understanding "V2V Communication Using Edge Computing for Safe Commute" and discovering innovative ways to solve it. Through this research, I aim to gain deeper insights, contribute meaningful findings to the field, and apply these insights in practical, real-world scenarios. It's a topic that challenges me, excites me, and constantly pushes me to learn more.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Profile Image Container Start -->
+                    <div class="profile-image-container">
+                        <img src="assets/img/profile images/robin_hossain_formal_image.jpg" alt="Robin Hossain" class="profile-image" id="profileImage" />
+                    </div>
+                    <!-- Profile Image Container End -->
+                    <h3 class="personal-info-title">Personal Information</h3>
+                    <div class="contact-info">
+                        <p><strong>Name</strong><span style="white-space:nowrap;">Robin Hossain</span></p>
+                        <p><strong>E-mail</strong><span style="white-space:nowrap;"><a href="mailto:robin.hossain@cutebd.biz" style="color: inherit; text-decoration: none;">robin.hossain@cutebd.biz</a></span></p>
+                        <p><strong>Phone</strong><span style="white-space:nowrap;"><a href="phone:++(880)1770-792411" style="color: inherit; text-decoration: none;">+(880)1770-792411</a></span></p>
+                        <p><strong>Blood Group</strong><span style="white-space:nowrap;">O+(ve)</span></p>
+                        <p><strong>Nationality</strong><span style="white-space:nowrap;">Bangladeshi</span></p>
+                        <p><strong>Values</strong><span style="white-space:nowrap;">Integrity | Continuous Learning | Teamwork</span></p>
+                        <p><strong>Motto</strong><span style="white-space:nowrap;"><em>"Driven by logic, defined by learning."</em></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>4</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>0.5+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h3>16990</h3>
+                    <p>Lines Of Code</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>3</h3>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title"></i> Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content associate-network-engineer-box">
+                        <div class="experience-header">
+                            <img src="assets/img/work experience/company_logo_MIL.png" alt="Company Logo" class="experience-logo">
+                            <div class="experience-text">
+                                <h3>Junior Officer</h3>
+                                <p>Department of IT</p>
+                                <h4><a href="https://www.linkedin.com/company/mousumi-industries-limited/posts/?feedView=all" target="_blank" rel="noopener noreferrer" style="color:inherit;">Mousumi Industries Limited</a></h4>
+                            </div>
+                        </div>
+                        <div class="timeline-year">June 2025 - Present</div>
+                        <div class="timeline-year corporate-office"><strong>Location:</strong> 9, Bangshal Road, Dhaka - 1100</div>
+                        <hr class="timeline-divider">
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Ensure that network equipment is configured, including switches, routers, and firewalls.</li>
+                                <li>Maintain network security protocols to safeguard data and prevent unauthorized access.</li>
+                                <li>Conduct routine LAN/WAN system inspections and testing to identify vulnerabilities.</li>
+                                <li>Collaborate with IT support teams to resolve technical issues and network-related incidents.</li>
+                                <li>Resolve any technical issues encountered by office employees.</li>
+                                <li>Manage the day-to-day operations of the data center, including performance monitoring and backup processes.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="white-skill">Network Administration</span>
+                            <span class="white-skill">Data Center Operations</span>
+                            <span class="white-skill">IT Infrastructure</span>
+                            <span class="white-skill">Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content time-space-box">
+                        <div class="experience-header">
+                            <div class="experience-text">
+                                <h3>Co-founder</h3>
+                                <h4><a href="https://www.facebook.com/timespace.com.bd" target="_blank" rel="noopener noreferrer">Time Space</a></h4>
+                            </div>
+                            <img src="assets/img/work experience/time_space_logo.jpg" alt="Time Space Logo" class="experience-logo experience-logo-right">
+                        </div>
+                        <div class="timeline-year">April 2018 - January 2021</div>
+                        <div class="timeline-year corporate-office"><strong>Location:</strong> Shantibagh, Dhaka - 1217, Bangladesh</div>
+                        <hr class="timeline-divider">
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Directly sourced branded, high-demand watches from importers and vendors.</li>
+                                <li>Developed pricing strategies, marketing content, and promotional offers to drive online engagement.</li>
+                                <li>Conducted market research and competitor analysis to identify growth opportunities and trends.</li>
+                                <li>Assessing the financial feasibility and return on investment (ROI) of projects.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="white-skill">Product Sourcing</span>
+                            <span class="white-skill">E-commerce Strategy</span>
+                            <span class="white-skill">Competitor Analysis</span>
+                            <span class="white-skill">ROI Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Here's What I'm Doing (uses existing classes only) -->
+            <div class="achievements-section" style="margin-top: 4rem;">
+                <div class="container">
+                    <h2 class="section-title">Here's What I'm Doing</h2>
+                    <p class="skills-description mobile-achievements-para">
+                        I shape my activities in ways that create value not only in my own life but also in the lives of others. I believe in empowering people to grow and become responsible, good citizens of the digital world.
+                    </p>
+                    <div class="achievements-grid">
+                        <div class="achievements-card">
+                            <div class="achievements-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Platform & Research</h3>
+                            <p>I work with computer networks, research, and IoT integration platforms, with a focus on compatibility and real-world solutions. I'm open to collaborating on projects related to networking and research.</p>
+                        </div>
+                        <div class="achievements-card">
+                            <div class="achievements-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Development</h3>
+                            <p>Writing HTML5, CSS, and JavaScript is a hobby of mine, as it allows me to stay updated with the latest technology. I'd love the opportunity to collaborate with you, making your ideas real in your next web application.</p>
+                        </div>
+                        <div class="achievements-card">
+                            <div class="achievements-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Problem Solving</h3>
+                            <p>Selected as Campus Ambassador of the Month by Think Bright, recognizing my dedication to fostering connections and promoting initiatives on campus for turning ideas into action and creating meaningful experiences.</p>
+                        </div>
+                        <div class="achievements-card">
+                            <div class="achievements-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Leadership</h3>
+                            <p>Beyond my job, I enjoy exploring new technologies for studying and sharing that knowledge with my students by teaching them about the IT sector. I love creating a space where curiosity and learning go hand in hand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="education-description mobile-education-para">
+                Education is the foundation for nurturing knowledge, skills, attitudes, beliefs, and habits that shape both personal and professional growth. With this belief, I pursued my academic journey and successfully completed my B.Sc. in Engineering.
+            </p>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <h4><a href="https://www.facebook.com/theuits" target="_blank" class="university-link">University of Information Technology & Sciences</a></h4>
+                        <div class="education-year">2020 - 2024</div>
+                        <p>I graduated with a Bachelor of Science in Engineering from the University of Information Technology &amp; Sciences, Baridhara, Dhaka, Bangladesh. For me, university life was more than just lectures and exams—it was a memorable chapter that shaped who I am today. My involvement included academics and extracurricular activities, building friendships that still mean a lot to me, and learning from faculty whose guidance I truly value. Among all the subjects, I especially enjoyed Computer Networks, Data Communication, Cyber Security, Algorithms, and Machine Learning.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Higher Secondary School Certificate - HSC</h3>
+                        <h4><a href="https://www.facebook.com/profile.php?id=100077272342852" target="_blank" class="college-link">Dhaka City International College</a></h4>
+                        <div class="education-year">2017 - 2019</div>
+                        <p>I studied at Dhaka City International College in Dhaka, Bangladesh, where I did a two-year science program. It was like starting a whole new chapter; I picked up a lot along the way, and subjects like physics, math, and ICT quickly became my favorites. It was during this period that I truly began to understand how science connects to the real world, inspiring my ongoing passion for technology.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Secondary School Certificate - SSC</h3>
+                        <h4><a href="https://www.facebook.com/mgbhs.edu.bd" target="_blank" class="school-link">Motijheel Govt. Boys' High School</a></h4>
+                        <div class="education-year">2011 - 2016</div>
+                        <p>I studied at Motijheel Govt. Boys' High School (also known as Central Govt.) for five years and was in the science group. My school life was full of moments that still make me feel nostalgic, like the laughter on the playground, the excitement of school happenings, and the silly backbench jokes that made those days so special. Physics, Chemistry, and Mathematics were among my favorite subjects, but what made those years truly special were the friendships and memories.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Primary School Certificate - PSC</h3>
+                        <h4><a href="https://www.facebook.com/shs108366" target="_blank" class="primary-school-link">Shantibagh High School</a></h4>
+                        <div class="education-year">2005 - 2010</div>
+                        <p>This is where my learning journey began. During these early years, I developed foundational skills in reading, writing, and learned the importance of discipline, respect, and curiosity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="skills-description mobile-skills-para">
+                Keeping up with the rapidly changing world of technology is the key to professional advancement. So, I have dedicated myself to mastering different programming languages and technologies. Here's a glimpse of my programming expertise.
+                </p>
+            <div class="progress-bars-grid">
+                <div class="progress-bar-container">
+                    <div class="language-name">HTML5</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="88" data-level="Advanced"></div>
+                        <div class="progress-callout skill-advanced mobile-callout-shift">Advanced</div>
+                    </div>
+                </div>
+                
+                <div class="progress-bar-container">
+                    <div class="language-name">JAVASCRIPT</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="71" data-level="Intermediate"></div>
+                        <div class="progress-callout skill-intermediate mobile-callout-shift">Intermediate</div>
+                    </div>
+                </div>
+                
+                <div class="progress-bar-container">
+                    <div class="language-name">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="88" data-level="Advanced"></div>
+                        <div class="progress-callout skill-advanced mobile-callout-shift">Advanced</div>
+                    </div>
+                </div>
+                
+                <div class="progress-bar-container">
+                    <div class="language-name">C++</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="73" data-level="Intermediate"></div>
+                        <div class="progress-callout skill-intermediate mobile-callout-shift">Intermediate</div>
+                    </div>
+                </div>
+                
+                <div class="progress-bar-container">
+                    <div class="language-name">PYTHON</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="67" data-level="Intermediate"></div>
+                        <div class="progress-callout skill-intermediate mobile-callout-shift">Intermediate</div>
+                    </div>
+                </div>
+                
+                <div class="progress-bar-container">
+                    <div class="language-name">JAVA</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="45" data-level="Basic"></div>
+                        <div class="progress-callout skill-basic mobile-callout-shift">Basic</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Skills Section -->
+    <section id="other-skills" class="other-skills-section">
+      <div class="container">
+        <h2 class="section-title">Other Skills</h2>
+                <p class="other-skills-description mobile-other-skills-para">
+                    In my opinion, one needs some fundamental knowledge to adapt to the environment in addition to academic skills to live in the real world. And I think I have the necessary abilities in the following.
+                </p>
+        <div class="other-skills-grid">
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="92">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Professional</div>
+              </div>
+            </div>
+            <span>COMMUNICATION</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="79">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Intermediate</div>
+              </div>
+            </div>
+            <span>ORGANIZATION</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="85">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient3)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Advanced</div>
+              </div>
+            </div>
+            <span>LEARNING</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="87">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient4)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Advanced</div>
+              </div>
+            </div>
+            <span>PLANNING</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="74">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient5)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Intermediate</div>
+              </div>
+            </div>
+            <span>PROGRAMMING</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="74">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient6)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Intermediate</div>
+              </div>
+            </div>
+            <span>PROBLEM SOLVING</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="68">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient7" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient7)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Pre-Intermediate</div>
+              </div>
+            </div>
+            <span>CREATIVE WRITING</span>
+          </div>
+          <div class="other-skill-card">
+            <div class="circular-progress" data-percentage="62">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="gradient8" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#023e8a"/>
+                      <stop offset="100%" style="stop-color:#0096c7"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="progress-bg" cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                  <circle class="progress-fill" cx="50" cy="50" r="45" stroke="url(#gradient8)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="progress-text">Pre-Intermediate</div>
+              </div>
+            </div>
+            <span>MARKETING</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Proficiency Section -->
+    <section id="language-proficiency" class="language-proficiency-section">
+      <div class="container">
+        <h2 class="section-title">Language Proficiency</h2>
+                <p class="language-proficiency-description mobile-language-para">
+                    Outside of my own tongue, I enjoy learning other languages. Here are some languages that I know; check them out!
+                </p>
+        <div class="language-list">
+          <div class="language-circle-container">
+            <div class="language-name">ENGLISH</div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-percentage="81" data-level="B2 Level Proficient" style="background:#000000; background-image:none;"></div>
+              <div class="progress-callout mobile-lang-callout-shift">B2 Level Proficient</div>
+            </div>
+          </div>
+          
+          <div class="language-circle-container">
+            <div class="language-name">BENGALI</div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-percentage="92" data-level="Native" style="background:#000000; background-image:none;"></div>
+              <div class="progress-callout mobile-lang-callout-shift">Native</div>
+            </div>
+          </div>
+          
+          <div class="language-circle-container">
+            <div class="language-name">GERMAN (DEUTSCH)</div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-percentage="35" data-level="Limited Working Proficiency" style="background:#000000; background-image:none;"></div>
+              <div class="progress-callout mobile-lang-callout-shift">Limited Working Proficiency</div>
+            </div>
+          </div>
+          
+          <div class="language-circle-container">
+            <div class="language-name">HINDI</div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-percentage="69" data-level="Professional Working Proficiency" style="background:#000000; background-image:none;"></div>
+              <div class="progress-callout mobile-lang-callout-shift">Professional Working Proficiency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?w=400&h=250&fit=crop" alt="Network Infrastructure Project">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Infrastructure Setup</h3>
+                        <p>Comprehensive network infrastructure design and implementation for a medium-sized enterprise, including security protocols and monitoring systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Cisco</span>
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Monitoring</span>
+                            <span class="tech-tag">Infrastructure</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Details
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-file-alt"></i>
+                                Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?w=400&h=250&fit=crop" alt="Cybersecurity Assessment">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cybersecurity Assessment</h3>
+                        <p>Complete security audit and vulnerability assessment for organizational IT infrastructure with recommendations and implementation plan.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Security Audit</span>
+                            <span class="tech-tag">Vulnerability Assessment</span>
+                            <span class="tech-tag">Risk Analysis</span>
+                            <span class="tech-tag">Compliance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Details
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-file-alt"></i>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?w=400&h=250&fit=crop" alt="Data Center Monitoring">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Center Monitoring System</h3>
+                        <p>Implementation of comprehensive monitoring solution for data center operations including real-time alerts and performance tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Monitoring</span>
+                            <span class="tech-tag">Data Center</span>
+                            <span class="tech-tag">Performance</span>
+                            <span class="tech-tag">Alerts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Details
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-file-alt"></i>
+                                Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <!-- Portfolio Tab Navigation -->
+            <div class="portfolio-tabs">
+                <button class="portfolio-tab active" data-tab="certifications">Certifications</button>
+                <button class="portfolio-tab" data-tab="research">Research</button>
+                <button class="portfolio-tab" data-tab="articles">Featured Articles</button>
+                <button class="portfolio-tab" data-tab="achievements">Achievements</button>
+                <button class="portfolio-tab" data-tab="places">Visited Places</button>
+                <button class="portfolio-tab" data-tab="photography">Photography</button>
+            </div>
+            
+            <!-- Portfolio Content Container -->
+            <div class="portfolio-content">
+                    <!-- Certifications Tab Content -->
+                <div class="tab-content" id="certifications-content">
+                    <div class="certifications-section">
+                <p class="certifications-description">I have completed a series of industry-recognized certifications in networking, computer hardware, IT infrastructure, and technical support. Getting these certifications has enhanced my practical skills and problems-solving ability. Check out my certifications below.</p>
+                
+                <button class="cert-nav-btn cert-nav-prev" onclick="scrollCertifications('prev')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="cert-nav-btn cert-nav-next" onclick="scrollCertifications('next')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="certifications-carousel">
+                    <div class="certifications-track">
+                        <!-- Certification Card 1 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/networking_devices_and_initial_configuration.png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 2 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Introduction to Critical Infrastructure Protection (ICIP)" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Introduction to Critical Infrastructure Protection (ICIP)</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://learn.opswatacademy.com/certificate/qQI2L5tTuQ" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 3 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/english_for_IT_2.png" alt="English for IT 2" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>English for IT 2</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Advanced Tenses</span>
+                                    <span class="cert-tag">Logical Deductions</span>
+                                    <span class="cert-tag">Cloud Computing Vocabulary</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/e8f46312-74a2-4d0a-89fb-d4c4d9897eb5" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 4 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 5 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 6 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 7 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 8 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 9 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 10 -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Duplicate Cards for Infinite Loop -->
+                        <!-- Certification Card 1 (Duplicate) -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/networking_devices_and_initial_configuration.png" alt="Networking Devices and Initial Configuration" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Networking Devices and Initial Configuration</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 2 (Duplicate) -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/introduction to_critical_infrastructure_protection (ICIP).png" alt="Introduction to Critical Infrastructure Protection (ICIP)" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>Introduction to Critical Infrastructure Protection (ICIP)</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://learn.opswatacademy.com/certificate/qQI2L5tTuQ" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification Card 3 (Duplicate) -->
+                        <div class="certification-card">
+                            <div class="cert-badge">
+                                <img src="assets/img/portfolio/certifications/english_for_IT_2.png" alt="English for IT 2" />
+                            </div>
+                            <div class="cert-info">
+                                <h3>English for IT 2</h3>
+                                <p class="cert-description">Gained hands-on experience with Cisco Packet Tracer and labs, covering IP addressing, subnetting, device configuration, network design, and troubleshooting. Developed practical skills in ARP, DHCP, DNS, Ethernet, transport protocols, and virtualization/cloud services</p>
+                                <div class="cert-tags">
+                                    <span class="cert-tag">Hierarchical Network Design</span>
+                                    <span class="cert-tag">IPv4 Subnetting</span>
+                                    <span class="cert-tag">Virtualization and Cloud Services</span>                    
+                                </div>
+                            </div>
+                            <div class="cert-buttons">
+                                <a href="https://www.credly.com/badges/0713df05-7c95-4f18-b73c-11947721c1ee/public_url" class="cert-link primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+                <!-- Research Tab Content -->
+                <div class="tab-content" id="research-content">
+                    <div class="certifications-section">
+                        <p class="certifications-description">For my final year project, I conducted a thesis on predicting drinking water quality, collaborating with my two friends. Our research focused on leveraging machine learning techniques to assess and predict the drinking water quality in Bangladesh.</p>
+                        
+                        <!-- Research Paper Card -->
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/research/uits_logo_without_bg.png" alt="University Logo" class="pdf-logo">
+                                </div>
+                            </div>
+                            
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">Drinking Water Quality Prediction Based on Machine Learning Algorithms</h3>
+                                <p class="paper-subtitle"><a href="https://www.facebook.com/theuits" target="_blank" style="color: #7f1419; text-decoration: none; font-weight: bold; transition: color 0.3s ease;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#7f1419'"><strong>University of Information Technology & Sciences</strong></a></p>
+                                
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-university"></i>
+                                        <span>Comprehensive Academic Research Paper</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Final Year</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="paper-abstract">In developing nations like Bangladesh, contaminated sources of drinking water are a serious public health concern. It explores how machine learning can predict water potability with greater accuracy and speed than traditional methods. Using a dataset of nine key water quality parameters, six models were tested: Logistic Regression, KNN, Decision Tree, Random Forest, SVM, and XGBoost. Among them, the Support Vector Machine Classifier achieved the highest accuracy (87.15%) after class imbalance adjustment and K-fold validation, demonstrating its effectiveness in identifying safe and unsafe water.</p>
+                                
+                                <div class="paper-actions">
+                                    <a href="https://drive.google.com/file/d/1hNXFVTEhuE9FCb6JobHdpr8Kce7PrFjx/view?usp=drive_link" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-eye"></i>
+                                        Read Full Paper
+                                    </a>
+                                    <a href="https://drive.google.com/uc?export=download&id=1hNXFVTEhuE9FCb6JobHdpr8Kce7PrFjx&confirm=t&uuid=1" class="btn-secondary research-btn" download>
+                                        <i class="fas fa-download"></i>
+                                        Download PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Articles Tab Content -->
+                <div class="tab-content" id="articles-content">
+                    <div class="certifications-section">
+                        <p class="certifications-description">A selection of my published articles that reflect the topics I’m passionate about. Writing is a hobby that allows me to explore ideas, share insights, and express my curiosity.</p>
+
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/featured articles/medium_logo.png" alt="Medium Logo" class="pdf-logo">
+                                </div>
+                            </div>
+
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">Why Rebrand Twitter as ‘X’? Elon Musk’s ‘Everything App,’ Explained</h3>
+                                <p class="paper-subtitle">Published on <a href="https://medium.com/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: bold;"><strong>Medium</strong></a> · August 2023</p>
+
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-tag"></i>
+                                        <span>Everything App</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>3 min read</span>
+                                    </div>
+                                </div>
+
+                                <p class="paper-abstract">Why did Elon Musk turn Twitter into X? Get a quick breakdown of the vision behind the rebrand and how it could evolve into an all-in-one “everything app.”</p>
+
+                                <div class="paper-actions">
+                                    <a href="https://medium.com/@imrobinhossain/why-rebrand-twitter-as-x-elon-musk-s-everything-app-explained-9bb5b2a29c6d" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Read Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/featured articles/medium_logo.png" alt="Medium Logo" class="pdf-logo">
+                                </div>
+                            </div>
+
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">How Digital Twins Are Improving Transportation</h3>
+                                <p class="paper-subtitle">Published on <a href="https://medium.com/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: bold;"><strong>Medium</strong></a> · August 2023</p>
+
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-tag"></i>
+                                        <span>Digital Twin Technology</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>4 min read</span>
+                                    </div>
+                                </div>
+
+                                <p class="paper-abstract">This article shows how digital twins can predict traffic issues, improve safety, and support smarter transportation planning, reducing congestion and improving efficiency.</p>
+
+                                <div class="paper-actions">
+                                    <a href="https://medium.com/@imrobinhossain/how-digital-twins-are-improving-transportation-5cbebd78a80b" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Read Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/featured articles/ysse_logo.jpg" alt="DEV Community Logo" class="pdf-logo">
+                                </div>
+                            </div>
+
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">SEO Year In Review 2023: The Year Of Generative AI</h3>
+                                <p class="paper-subtitle">Published on <a href="https://ysseblog.com/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: bold;"><strong>YSSE Blog</strong></a> · January 2024</p>
+
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-tag"></i>
+                                        <span>Generative AI in SEO</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>4 min read</span>
+                                    </div>
+                                </div>
+
+                                <p class="paper-abstract">Discover how generative AI transformed SEO in 2023 — from game-changing AI search tools to fresh content strategies and surprising ethical dilemmas.</p>
+
+                                <div class="paper-actions">
+                                    <a href="https://ysseblog.com/seo-year-in-review-2023-the-year-of-generative-AI/" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Read Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/featured articles/ysse_logo.jpg" alt="YSSE Blog Logo" class="pdf-logo">
+                                </div>
+                            </div>
+
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">Explosions And Exploration: Why 2023 Was An Exciting Year In Space</h3>
+                                <p class="paper-subtitle">Published on <a href="https://ysseblog.com/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: bold;"><strong>YSSE Blog</strong></a> · February 2024</p>
+
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-tag"></i>
+                                        <span>Space Exploration</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>3 min read</span>
+                                    </div>
+                                </div>
+
+                                <p class="paper-abstract">An article describes how 2023 became a standout year for space exploration, marked by explosive rocket tests, major achievements like Chandrayaan-3, and rapid innovation.</p>
+
+                                <div class="paper-actions">
+                                    <a href="https://ysseblog.com/explosions-and-exploration-why-2023-was-an-exciting-year-in-space/" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Read Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/featured articles/ysse_logo.jpg" alt="YSSE Blog Logo" class="pdf-logo">
+                                </div>
+                            </div>
+
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">The Art Of Matching Your Skills To Your Ideal Professional Path</h3>
+                                <p class="paper-subtitle">Published on <a href="https://ysseblog.com/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: bold;"><strong>YSSE Blog</strong></a> · February 2024</p>
+
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-tag"></i>
+                                        <span>Career Development</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>5 min read</span>
+                                    </div>
+                                </div>
+
+                                <p class="paper-abstract">Discover how to align your strengths and skills with a career path that suits you. Making informed choices begins with self-assessment and market demand.</p>
+
+                                <div class="paper-actions">
+                                    <a href="https://ysseblog.com/the-art-of-matching-your-skills-to-your-ideal-professional-path/" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Read Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/featured articles/ysse_logo.jpg" alt="YSSE Blog Logo" class="pdf-logo">
+                                </div>
+                            </div>
+
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">From Chandpur to MIT: The Extraordinary Journey of a Small-Town Scholar</h3>
+                                <p class="paper-subtitle">Published on <a href="https://ysseblog.com/" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: bold;"><strong>YSSE Blog</strong></a> · March 2024</p>
+
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-tag"></i>
+                                        <span>Inspiring Journey</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>5 min read</span>
+                                    </div>
+                                </div>
+
+                                <p class="paper-abstract">This article chronicles the remarkable journey of a scholar who turned ambition into achievement, proving that determination can overcome any obstacle.</p>
+
+                                <div class="paper-actions">
+                                    <a href="https://ysseblog.com/from-chandpur-to-mit-the-extraordinary-journey-of-a-small-town-scholar/" target="_blank" class="btn-primary research-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Read Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="articles-navigation">
+                            <a href="#" class="btn-secondary research-btn articles-nav-btn" onclick="return switchFeaturedArticle(-1)">
+                                <i class="fas fa-chevron-left"></i>
+                                Previous
+                            </a>
+                            <a href="#" class="btn-primary research-btn articles-nav-btn" onclick="return switchFeaturedArticle(1)">
+                                Next
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                        <script>
+                        (function() {
+                            const section = document.querySelector('#articles-content .certifications-section');
+                            const cards = Array.from(document.querySelectorAll('#articles-content .research-paper-card'));
+                            if (!section || !cards.length) return;
+                            
+                            let activeIndex = 0;
+                            
+                            // Track observer so we don't attach duplicates
+                            let currentResizeObserver = null;
+                            let currentImagesObserved = [];
+                            
+                            function cleanupObservers() {
+                                if (currentResizeObserver) {
+                                    try { currentResizeObserver.disconnect(); } catch (e) {}
+                                    currentResizeObserver = null;
+                                }
+                                currentImagesObserved.forEach(img => {
+                                    img.removeEventListener('load', positionPeekSafely);
+                                });
+                                currentImagesObserved = [];
+                            }
+                            
+                            function positionPeekSafely(activeCard, peekCard) {
+                                if (!activeCard || !peekCard) return;
+                                // Desktop only
+                                if (window.innerWidth <= 1024) return;
+                                // Use the active card's natural offset within section
+                                const top = activeCard.offsetTop;
+                                if (top >= 0) {
+                                    peekCard.style.top = top + 'px';
+                                }
+                            }
+                            
+                            function updateDisplay() {
+                                // Desktop: show active tile with next tile peeking from right
+                                if (window.innerWidth > 1024) {
+                                    const activeCard = cards[activeIndex];
+                                    const peekCard = cards[(activeIndex + 1) % cards.length];
+                                    
+                                    // First, set up active tile and hidden tiles
+                                    cards.forEach((card, i) => {
+                                        // Remove all classes
+                                        card.classList.remove('active-tile', 'peek-tile', 'hidden-tile');
+                                        
+                                        if (i === activeIndex) {
+                                            // Active tile in normal flow
+                                            card.style.position = '';
+                                            card.style.top = '';
+                                            card.style.left = '';
+                                            card.style.right = '';
+                                            card.classList.add('active-tile');
+                                            card.style.display = '';
+                                        } else if (i === (activeIndex + 1) % cards.length) {
+                                            // skip, handle as peek below
+                                        } else {
+                                            // Hide the rest
+                                            card.style.position = '';
+                                            card.style.top = '';
+                                            card.style.left = '';
+                                            card.style.right = '';
+                                            card.classList.add('hidden-tile');
+                                            card.style.display = 'none';
+                                        }
+                                    });
+                                    
+                                    // Now handle peek card and keep it aligned to active card
+                                    if (peekCard && activeCard) {
+                                        // Ensure cleanup of previous observers
+                                        cleanupObservers();
+                                        
+                                        peekCard.classList.remove('active-tile', 'hidden-tile');
+                                        peekCard.classList.add('peek-tile');
+                                        peekCard.style.display = '';
+                                        
+                                        // Initial positioning (multiple attempts for stability on refresh)
+                                        requestAnimationFrame(() => {
+                                            positionPeekSafely(activeCard, peekCard);
+                                            requestAnimationFrame(() => {
+                                                positionPeekSafely(activeCard, peekCard);
+                                                setTimeout(() => positionPeekSafely(activeCard, peekCard), 120);
+                                            });
+                                        });
+                                        
+                                        // Re-position if the active card size changes (e.g., fonts/images)
+                                        if ('ResizeObserver' in window) {
+                                            currentResizeObserver = new ResizeObserver(() => positionPeekSafely(activeCard, peekCard));
+                                            try { currentResizeObserver.observe(activeCard); } catch (e) {}
+                                        }
+                                        // Re-position after images inside active card load
+                                        const imgs = Array.from(activeCard.querySelectorAll('img'));
+                                        imgs.forEach(img => {
+                                            img.addEventListener('load', () => positionPeekSafely(activeCard, peekCard));
+                                        });
+                                        currentImagesObserved = imgs;
+                                    }
+                                } else {
+                                    // Mobile: show all tiles in normal flow
+                                    cleanupObservers();
+                                    cards.forEach(card => {
+                                        card.classList.remove('active-tile', 'peek-tile', 'hidden-tile');
+                                        card.style.display = '';
+                                        card.style.position = '';
+                                        card.style.top = '';
+                                        card.style.left = '';
+                                        card.style.right = '';
+                                        card.style.transform = '';
+                                        card.style.opacity = '';
+                                        card.style.filter = '';
+                                        card.style.zIndex = '';
+                                        card.style.pointerEvents = '';
+                                    });
+                                }
+                            }
+                            
+                            window.switchFeaturedArticle = function(delta) {
+                                activeIndex = (activeIndex + delta + cards.length) % cards.length;
+                                updateDisplay();
+                                return false;
+                            };
+                            
+                            window.addEventListener('resize', function() {
+                                updateDisplay();
+                            });
+                            // Initial display - ensure it runs after page is fully loaded
+                            if (document.readyState === 'complete') {
+                                setTimeout(function() {
+                                    updateDisplay();
+                                }, 200);
+                            } else {
+                                window.addEventListener('load', function() {
+                                    setTimeout(function() {
+                                        updateDisplay();
+                                    }, 200);
+                                });
+                                updateDisplay();
+                            }
+                        })();
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Achievements Tab Content -->
+                <div class="tab-content" id="achievements-content">
+                    <div class="certifications-section">
+                        <p class="certifications-description">Throughout my academic journey, I've earned recognition that reflects my dedication to continuous learning and innovation. Being selected as the Campus Ambassador of the Month at Think Bright stands as a testament to my commitment to educational growth and technical excellence.</p>
+                        
+                        <!-- Campus Ambassadorship Showcase -->
+                        <div class="research-paper-card">
+                            <div class="research-paper-preview">
+                                <div class="pdf-thumbnail">
+                                    <img src="assets/img/portfolio/achievements/think_bright_logo.png" alt="Think Bright Logo" class="pdf-logo">
+                                </div>
+                            </div>
+                            <div class="research-paper-content">
+                                <h3 class="paper-title">Campus Ambassador</h3>
+                                <p class="paper-subtitle"><a href="https://www.facebook.com/thinkbright.xyz" target="_blank" style="color: #f7931e; text-decoration: none; font-weight: bold; transition: color 0.3s ease;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#f7931e'">Think Bright</a> </p>
+                                <div class="paper-metadata">
+                                    <div class="metadata-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Jul 2023 - Dec 2023</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>Monthly Recognition</span>
+                                    </div>
+                                    <div class="metadata-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Leadership Role</span>
+                                    </div>
+                                </div>
+                                <p class="paper-abstract">As a proud ambassador of Think Bright, I had the privilege of promoting its mission to diverse audiences and collaborating with like-minded individuals and organizations. This experience strengthened my belief in the power of education to inspire growth and innovation. I was honored to be selected as the Campus Ambassador of the Month for my contributions to advancing educational and creative initiatives.
+                                </p>
+                                <div class="paper-actions">
+                                    <a href="https://www.facebook.com/photo/?fbid=610498537854751&set=a.404964108408196" target="_blank" class="btn-primary research-btn" download>
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Recognition
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visited Places Tab Content -->
+                <div class="tab-content" id="places-content">
+                    <div class="certifications-section">
+                        <p class="certifications-description">Over the past few years, I have traveled through several districts across Bangladesh. Every travel experience has enriched my perspective. These explorations continue to inspire me; blending curiosity, culture, and innovation into the way I see the world.</p>
+                        
+                        <div class="research-paper-showcase">
+                            <div class="research-paper-card">
+                                <div class="paper-details">
+                                    <h3 class="paper-title">My Travel Experience</h3>
+                                    <div class="paper-meta">
+                                        <div class="meta-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>18 Districts</span>
+                                        </div>
+                                    </div>
+                                    <p class="paper-abstract">I've explored 18 districts across Bangladesh, each journey adding a new story to my path. My first adventure began in Sylhet in 2016, right after my SSC exam—a trip with friends that still feels vividly alive. And my most recent destination was Chandpur in 2025, a sudden yet thrilling trip with friends that turned into an unforgettable experience. Traveling, to me, is a way to see life through new perspectives, embrace cultures, and rediscover myself with every journey.</p>
+                                    <div class="paper-actions">
+                                        <a href="https://mytravmap.com/share/ee88d26f-c650-4dab-bc36-3a564cf9a858" target="_blank" class="btn-primary research-btn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            View My Travel Map
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="paper-preview">
+                                    <div class="paper-cover">
+                                        <img src="assets/img/portfolio/visited places/visited_districts.png" alt="Visited Districts Map" class="travel-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography Tab Content -->
+                <div class="tab-content" id="photography-content">
+                    <div class="certifications-section">
+                        <p class="certifications-description">Over the past few years, I have traveled through several districts across Bangladesh. Every travel experience has enriched my worldview. These explorations continue to inspire me; blending curiosity, culture, and innovation into the way I see the world.</p>
+                        <div class="achievements-grid">
+                    <div class="achievements-card">
+                        <div class="achievements-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Technical Documentation</h3>
+                        <p>Created visual documentation of network infrastructure, data center layouts, and technical implementations.</p>
+                    </div>
+                    <div class="achievements-card">
+                        <div class="achievements-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Visual Storytelling</h3>
+                        <p>Captured the essence of technology through photography, showcasing the intersection of art and IT.</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Myself Section -->
+    <section id="about-myself" class="about-myself-section">
+        <div class="container">
+            <h2 class="section-title">About Myself</h2>
+            <p><span class="quote-icon-inline"><i class="fas fa-quote-left"></i></span>I'm someone who believes in clear, efficient communication and bringing a disciplined approach to everything I do. You could say I'm both an eloquent and an organized person. I really value being on time and staying patient, which helps me keep my eye on the prize. Taking on problems with a proactive and positive attitude is one of my strengths. I'm also adaptable, which allows me to adjust to different situations while staying consistent. As an ambivert, I can focus independently when needed, but I really excel when collaborating with others, bouncing ideas around, and improving them.<span class="quote-icon-inline"><i class="fas fa-quote-right"></i></span></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in hearing about new opportunities and exciting projects. Whether you need network infrastructure setup, cybersecurity assessment, or technical support, let's discuss how I can help bring your vision to life.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:robin.hossain@cutebd.biz" class="contact-link">robin.hossain@cutebd.biz</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><a href="phone:+8801770-792411" class="contact-link">+(880)1770-792411</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" style="color: #e34133; font-size: 2rem;"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Shantibagh, Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-file-download"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="https://drive.google.com/uc?export=download&id=18dNZ1_FLN2AP8Ec1eCjbc_XYwFgS5lUc" class="btn-cv-download mobile-cv-btn" download>Download My Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <h3 class="form-headline">Ping Me Anytime</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="e.g., Robin Hossain">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="e.g., robin.hossain@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required placeholder="e.g., Shantibagh, Dhaka - 1217, Bangladesh">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="e.g., Inquiry Regarding Network Support">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Write your message here…"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favourite Quote Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <h2 class="section-title">Favorite Quotes</h2>
+            <div class="quote-content">
+                <blockquote class="quote-text">
+                    "Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another."
+                </blockquote>
+                <div class="quote-author">
+                    <span class="author-name">Carl Sagan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <!-- Sidebar Scroll Progress Indicator -->
+    <div id="scrollSidebar" class="scroll-sidebar">
+      <div class="scroll-bar-bg">
+        <div class="scroll-bar-progress" id="scrollBarProgress"></div>
+        <span id="navbarScrollPercent" class="navbar-scroll-percent">0%</span>
+      </div>
+    </div>
+
+            <!-- Footer -->
+        <footer class="footer">
+          <!-- Animated Circles Background -->
+          <div class="footer-circles">
+            <div class="footer-circle circle-1" data-speed="0.3"></div>
+            <div class="footer-circle circle-2" data-speed="0.5"></div>
+            <div class="footer-circle circle-3" data-speed="0.7"></div>
+            <div class="footer-circle circle-4" data-speed="0.4"></div>
+            <div class="footer-circle circle-5" data-speed="0.6"></div>
+            <div class="footer-circle circle-6" data-speed="0.8"></div>
+            <div class="footer-circle circle-7" data-speed="0.2"></div>
+            <div class="footer-circle circle-8" data-speed="0.9"></div>
+            <div class="footer-circle circle-9" data-speed="0.1"></div>
+            <div class="footer-circle circle-10" data-speed="0.6"></div>
+          </div>
+          
+          <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <div class="footer-social-links">
+                        <a href="https://bd.linkedin.com/in/imrobinhossain" target="_blank" class="footer-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/imrobinhossain" target="_blank" class="footer-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.quora.com/profile/%E0%A6%AE%E0%A7%8B%E0%A6%B9%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%A6-%E0%A6%B0%E0%A6%AC%E0%A6%BF%E0%A6%A8-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%87%E0%A6%A8-Robin-Hossain" target="_blank" class="footer-social-link">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                        <a href="https://facebook.com/imrobinhossain" target="_blank" class="footer-social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/imrobinhossain" target="_blank" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.imdb.com/list/ls568020917/" target="_blank" class="footer-social-link">
+                            <i class="fab fa-imdb"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <p class="copyright">Copyright ©2022-2025 | All rights reserved.</p>
+                <p class="developer-credit">Designed & Developed by <a href="https://bd.linkedin.com/in/imrobinhossain" target="_blank" class="developer-link">Robin Hossain</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Solar System Canvas Background -->
+    <canvas id="footer-solar-canvas"></canvas>
+    <!-- End Solar System Canvas Background -->
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("N5afJ1oBGzR7m3BHS");
+      })();
+    </script>
+    
+    <!-- Certifications Carousel Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.certifications-carousel');
+            const track = document.querySelector('.certifications-track');
+            const cards = document.querySelectorAll('.certification-card');
+            
+            if (!carousel || !track || cards.length === 0) return;
+            
+            let isPaused = false;
+            
+            // Function to pause animation
+            function pauseAnimation() {
+                if (!isPaused) {
+                    track.style.animationPlayState = 'paused';
+                    isPaused = true;
+                }
+            }
+            
+            // Function to resume animation
+            function resumeAnimation() {
+                if (isPaused) {
+                    track.style.animationPlayState = 'running';
+                    isPaused = false;
+                }
+            }
+            
+            // Add event listeners to each card for pause on interaction
+            cards.forEach((card, index) => {
+                card.addEventListener('mouseenter', pauseAnimation);
+                card.addEventListener('mouseleave', resumeAnimation);
+                card.addEventListener('click', function() {
+                    pauseAnimation();
+                    // Resume after 3 seconds of inactivity
+                    setTimeout(resumeAnimation, 3000);
+                });
+            });
+            
+            // Pause on carousel hover
+            carousel.addEventListener('mouseenter', pauseAnimation);
+            carousel.addEventListener('mouseleave', resumeAnimation);
+            
+            // Handle animation iteration for infinite loop
+            track.addEventListener('animationiteration', function() {
+                // Reset position for seamless looping - now works with duplicated cards
+                track.style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+    
+    <!-- Ripple Effect for Send Message Button -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendButton = document.querySelector('.btn-submit');
+            
+            if (sendButton) {
+                sendButton.addEventListener('click', function(e) {
+                    // Remove any existing ripple
+                    const existingRipple = this.querySelector('.ripple');
+                    if (existingRipple) {
+                        existingRipple.remove();
+                    }
+                    
+                    // Get button position and cursor position
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left - 10; // Center the ripple
+                    const y = e.clientY - rect.top - 10;  // Center the ripple
+                    
+                    // Create ripple element
+                    const ripple = document.createElement('span');
+                    ripple.classList.add('ripple');
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.style.position = 'absolute';
+                    ripple.style.width = '20px';
+                    ripple.style.height = '20px';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(255, 255, 255, 0.8)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'ripple-animation 0.6s linear';
+                    ripple.style.pointerEvents = 'none';
+                    ripple.style.zIndex = '200';
+                    
+                    // Add ripple to button
+                    this.appendChild(ripple);
+                    
+                    // Remove ripple after animation
+                    setTimeout(() => {
+                        if (ripple.parentNode) {
+                            ripple.remove();
+                        }
+                    }, 600);
+                });
+            }
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
